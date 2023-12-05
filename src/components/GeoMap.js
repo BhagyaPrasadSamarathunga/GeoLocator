@@ -36,7 +36,7 @@ const GeoMap = ({ mapCenter, geoJsonData, geoJsonKey }) => {
 
   return (
     <div className='mapContainer'>
-    <MapContainer zoom={25} center={mapCenter} className='map'>
+    <MapContainer zoom={25} center={mapCenter} className='map' data-testid ="map-container">
       <ChangeMapView center={mapCenter} />
       <TileLayer
         url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
